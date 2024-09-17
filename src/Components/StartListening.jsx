@@ -1,4 +1,3 @@
-import { Container } from "react-bootstrap"
 
 function StartListening(props){
 
@@ -9,7 +8,7 @@ function StartListening(props){
         stopListening,
     } = props;
 
-    return <Container>
+    return <div>
         <button className={isListening?"btn btn-success disabled": "btn btn-success"}  onClick={startListening}>
             Start Listening
         </button>
@@ -22,7 +21,7 @@ function StartListening(props){
         <p>
             {text}
         </p>
-    </Container>
+    </div>
 }
 
 export default StartListening;
