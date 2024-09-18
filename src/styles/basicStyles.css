@@ -1,0 +1,18 @@
+.svg-width-adjustment{
+    max-width: 1rem;
+    max-height: 1rem;
+
+    transform: translate(500%, -150%);
+}
+
+.text-body-adjustment{
+    transform: translateY(20%);
+    font-size: 1rem; 
+    font-weight: bold;
+}
+
+.text-body-style{
+    min-width: 60vw;
+    min-height: 40vh;
+    
+}
