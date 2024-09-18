@@ -8,7 +8,7 @@ function NavBar(props){
             </li>
 
             <li className="nav-item list-unstyled text-dark-emphasis h3">
-                <button className="btn btn-outline-danger h3 text-dark-emphasis px-4" onClick={clearText}>ClearText</button>
+                <button className="btn btn-outline-danger h3 text-dark-emphasis px-4" onClick={clearText}>Clear Text</button>
             </li>
     </nav>
 }
