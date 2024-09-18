@@ -22,7 +22,6 @@ const useSpeechRecognition = () => {
             console.log("onresult event: ", event);
             let newText = event.results[count.current++][0].transcript;
             setText((text) => { return [...text, " ", newText] });
-        
         }
     }, []);
 
@@ -37,11 +36,16 @@ const useSpeechRecognition = () => {
         count.current = 0;
     }
 
+    const clearText = () => {
+        setText(['']);
+    }
+
     return {
         text,
         isListening,
         startListening,
         stopListening,
+        clearText,
         hasRecognitionSupport: !!recognition
     }
 };

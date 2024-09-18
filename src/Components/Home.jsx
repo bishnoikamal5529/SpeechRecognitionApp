@@ -8,11 +8,13 @@ function Home(){
         isListening,
         startListening,
         stopListening,
+        clearText,
         hasRecognitionSupport
     } = useSpeechRecognition();
 
     return <>
-        {hasRecognitionSupport? <StartListening text={text} isListening={isListening} startListening={startListening} stopListening={stopListening} /> : <NotSupported />}
+        {hasRecognitionSupport? <StartListening text={text} isListening={isListening} startListening={startListening} stopListening={stopListening} clearText={clearText} /> 
+                                : <NotSupported />}
     </>
 }
 
