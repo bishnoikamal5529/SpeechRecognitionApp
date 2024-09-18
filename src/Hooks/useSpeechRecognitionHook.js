@@ -21,13 +21,12 @@ const useSpeechRecognition = () => {
         recognition.onresult = (event) =>{
             console.log("onresult event: ", event);
             let newText = event.results[count.current++][0].transcript;
-            setText((text) => { return [...text, newText] });
+            setText((text) => { return [...text, " ", newText] });
         
         }
     }, []);
 
     const startListening = () =>{
-        setText('');
         setIsListening(true);
         recognition.start();
     }
