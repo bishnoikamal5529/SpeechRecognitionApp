@@ -35,6 +35,7 @@ const useSpeechRecognition = () => {
     const stopListening = () => {
         setIsListening(false);
         recognition.stop();
+        count.current = 0;
     }
 
     return {
